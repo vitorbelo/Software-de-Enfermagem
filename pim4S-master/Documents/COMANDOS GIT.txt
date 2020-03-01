@@ -1,0 +1,294 @@
+comando para criar um repository git
+	git init
+
+COMANDO PARA REGISTRAR UM USUARIO
+	git config user.name 'nome'
+
+COMANDO PARA REGISTRAR UM E-MAIL
+	git config user.email 'email'
+
+COMANDO PARA VER SUA CONFIGURAÇÃO
+	git config --global -l
+
+COMANDO PARA VER TODO O REPOSITORY GIT
+	git log
+
+COMANDO PARA VER O STATUS DO ARQUIVO GIT
+	git status
+
+COMANDO PARA DAR O CHECKOUT NO ARQUIVO DESEJADO GIT
+	git checkout [codigo do commit]
+
+COMANDO PARA VOLTAR A VER O GIT MASTER
+	git checkout master
+
+COMANDO PARA DAR UM COMMIT
+	git commit -m 'mensagem'
+
+COMANDO PARA CLONAR GITHUB NO GIT
+	git clone [url]
+
+COMANDO PARA EMPURRAR UM ARQUIVO PARA O GITHUB
+	git push
+
+COMANDO PARA ATUALIZAR O SEU GIT (VER ARQUIVO NOVOS QUE FORAM CRIADOS PELO GITHUB)
+	git pull
+
+--------------------------------------------------------------------------------------
+			BRANCH FAST-FORWARD
+FAST-FORWARD - cria uma nova 'linha do tempo paralela á linha do tempo master'
+
+FAST-FORWARD 'MERGE' - função das branches [feito só quando não há novas alteraçoes na linha master]
+
+/* haverá um commit do tipo 'merge' quando ambas as linhas do tempo estiverem sendo usadas, com isso
+   o commit terá dois 'pais' o [master da linha principal] e o [branch paralelo].
+
+			COMANDOS
+COMANDO PARA CRIAR UMA NOVA BRANCH.
+	git branch 'nome da branch'
+
+COMANDO PARA VER AS BRANCHES NO PROJETO
+	git branch
+
+COMANDO PARA ACESSAR A NOVA BRANCH E UTILIZAR ELA
+	git checkout 'nome da branch'
+
+COMANDO PARA VOLTAR A BRANCH MASTER
+	git checkout master
+
+COMANDO PARA ADICIONAR UMA BRANCH A BRANCH MASTER
+	"deve estar branch master pra realizar o processo"
+	git merge 'nome da branch'
+
+COMANDO PARA TER UM MINI GRAFICO NA LINHA DO TEMPO
+	git log --graph
+
+COMANDO PARA EXCLUIR UMA BRANCH
+	git branch -d 'nome da branch'
+
+---------------------------------------------------------------------------
+		BRANCH MERGE RECURSIVE STRATEGY
+
+COMANDO PARA ENTRAR NA BRANCH QUE VOCÊ VAI ACABAR DE CRIAR
+	git checkout -b 'nome da branch'
+
+COMANDO PARA MOSTRAR O GRAFICO COM APENAS UMA LINHA NO CODIGO SIMPLIFICADO
+	git log --graph --oneline
+
+----------------------------------------------------------------------------
+		BRANCH CONFLIT DURANT MERGE
+
+""Fazer a atualização apos o 'merge' e depois modificar manualmente e assim
+   fazer o ultimo 'commit' [usar o -am] nao o [-m] ""
+
+-----------------------------------------------------------------------------
+		GITHUB ISSUES
+
+RASTREIO DE BUGS		HISTÓRICO DE ALTERAÇÕES
+SUGESTÃO DE FERRAMENTAS		DOCUMENTAÇÃO DOS PASSOS
+
+COMANDO PARA ENVIAR O ARQUIVO DO GIT NUMA BRANCH PARALELA
+	git push origin 'nome da branch'
+
+COMANDO PARA FECHAR UMA ISUE QUANDO TIVER A CERTEZA QUE SERÁ O FINAL DA ALTERAÇÃO
+	git commit -m 'mensagem + closes + a # da isue'
+
+-------------------------------------------------------------------------------
+		ISSUES E [MILESTONES]
+
+""Agrupadores de issues que tem caracteristicas exp, e só é encerrado quando
+  resolve algumas issues ""
+
+COMANDO [ fixes ] É USADO QUASE IGUAL O [ closes ] MAS A DIFERENÇA É QUE ESSE
+É USADO QUANDO SE CONSERTA UM PROBLEMA DETECTADO PELA #
+
+--------------------------------------------------------------------------------
+		ALTERAÇÕES COM CHECKOUT & RESET
+
+COMANDO PARA DESFAZER O CONTEXTO DENTRO DO ARQUIVO SALVO
+	git checkout 'nome do arquivo'
+
+COMANDO PARA DESCARTAR TUDO QUE ESTA NA AREA DE STAGE
+	git reset haed 'nome do arquivo'
+
+COMANDO PARA MOSTRAR AONDE ESTA A [HEAD]
+	git log --decorate / git log --decorate --oneline
+
+COMANDO PARA DESFAZER O ULTIMO COMMIT FEITO
+	git reset head^ [ um passo atras] / git reset head^^ [ dois passo atras]
+
+COMANDO PARA O GIT NAO RASTREAR O COMMIT
+	git rm --cached 'nome do arquivo'
+
+COMANDO PARA FAZER UM MASTER RESET DOS COMMIT E DENTRO DOS ARQUIVOS
+	git reset --hard 'rash do commit'
+
+--------------------------------------------------------------------------------
+		FORK E SINCRONIA DE REPOSITÓRIOS
+REPOSITORIO LOCAL -	REPOSITORIO PRINCIPAL [CENTRAL],
+[upstream]
+
+REPOSITORIO COPIA -	COPIA DE UM REPOSITORIO, EXPERIMENTAR ALTERAÇÕES, COLABORAR
+[fork]			COM PROJETOS (PARTE DO PROCESSO)
+
+REPOSITORIO LOCAL- 	git add remote upstream
+			git pull upstream master  [atualizar]
+			git push origin master	  [mandar]
+
+COMANDO PARA ADICIONAR O REMOTO
+	git remote add 'nome' padrao é [upstream]
+
+COMANDO PARA VER QUANTOS REMOTES TEM NO PROJETO GIT
+	git remote -v
+
+
+--------------------------------------------------------------------------------
+		REBASE VS MERGE
+	  "Modificar project history"
+- alterar ordem de commits
+- unir commits
+- modificar mensagem dos commits
+[tudo que tem haver com o historico do projeto, dá para melhorar com o comando REBASE]
+[rebase é a mesma coisa que o merge, só muda as caracteristicas em relação ao MERGE]
+
+		[GIT REBASE]
+" deixa tudo linear, fazendo que haja a forma [fast-foward] e assim quando realizar o
+  merge, não haverá o commit de merge, subirá o arquivo com o commit dele próprio"
+
+	[Controle de Branch com REBASE]
+		*CUIDADO*
+- os commits são refeitos!
+- cuidado com as branches públicas "pois pode destruir o historico no github"
+
+** quando usar o comando [GIT REBASE] usar dentro da branch secundaria, não dentro da
+   branch master. **	[git rebase master] 
+	--------------------------------------
+	| git checkout 'nome da branch' 
+	| git rebase master	              
+	| git checkout master
+	| git merge 'nome da branch'
+	-------------------------------------
+
+	REBASE INTERATIVO
+"! fazer isso localmente, sem ter suido o arquivo para um diretorio em cloud"
+[git rebase -i 'rash do commit de onde começar']
+
+-----------------------------------------------------------------------------------------
+	COLABORAÇÃO COM FORK WORKFLOW
+  PULL REQUEST
+- enviar alterações para serem
+  incorporadas à um projeto.
+
+- dicussões sobre o código.
+
+- integrar código revisado ao projeto.
+
+	"FLUXO básico do Pull Request"
+
+\upstream => [fork] => remote => [clone] => local "processo normal do fork"
+
+* com isso se irá fazer um modificação e movelo para sua conta *
+
+local => [push] => remote => [pull request] => upstream
+
+	 ------------------------------------
+	|	[fork]		     |
+	|git clone			     |
+	|git checkout -b, git add, git commit  |
+	|git push			     |
+	|	[pull request]	     |
+	|git pull upstream, git push	     |
+	 ------------------------------------
+------------------------------------------------------------------------------
+	PULL REQUEST REBASE & CONFLITOS
+* mesma coisa se usar o merge, porem o merge deixa muito poluido o history, por isso
+  iremos usar e fica mais bonito e legal, usar o [rebase] *
+
+COMANDO PARA NAO DAR PROBLEMA COM PULL REQUEST COMPARTILHADO
+"em uma nova branch, criada dentro da branch que deseja usar, deve usar o seguinte comando
+
+git checkout -b 'nova da nova branch'
+	
+	'agora fazer a sincronia do upstream dentro da nova branch'
+
+git pull upstream master --rebase
+
+	'depois disso, irá resolver o conflito, depois adiciona denovo'
+git add .
+
+	'depois continua de onde parou, sem precisar de um novo commit ou
+	 dar merge para a master'
+git rebase --continue
+
+--------------------------------------------------------------------------------------
+		limpando a bagunça
+COMANDO PARA VER AS BRANCH QUE TEM CRIADAS
+	git branch -v
+
+COMANDO PARA EXCLUIR A BRANCH 
+	git branch -D + 'nome da branch'
+  [o 'D' tem que ser maiusculo] 
+
+	Excluindo branchs em repositorios já alocados no github
+git push -d origin 'nome da branch'
+
+------------------------------------------------------------------------------------------
+	Single repository workflow
+	   (github workflow)
+
+ -----------------------
+|git clone		|
+|git checkout -b	|
+|git add .		|
+|git commit	|
+|git push		|
+|pull request	|
+|git pull		|
+ -----------------------
+
+		fluxo basico
+ -------------------------------
+|git clone			|
+|git checkout		|
+|git add . && git commit	|
+|git push origin 		|
+|git checkout master		|
+|git pull			|
+ -------------------------------
+
+----------------------------------------------------------------------------------
+		git stash
+comando para armazenar(guardar aquivos ainda nao commitados na master), serve para
+nao ter que precisar fazer varias branches e depois modificar sua histroy.
+
+COMANDO PARA GUARDA TEMPORARIAMENTE ARQUIVOS EM MODE DE PILHA
+git stash
+
+COMANDO PARA VOLTAR SEUS ARQUIVOS DA PILHA
+git stash apply
+
+COMANDO PARA SALVAR E DEIXAR UMA MENSAGEM
+git stash save 'msg'
+
+COMANDO PARA VER A LISTA DO STASH
+git stash list
+
+COMANDO PARA MOSTRAR OQUE ACONTECEU DENTRO DO ARQUIVO
+git stash show --patch
+
+COMANDO PARA VOLTAR O ARQUIVO E REMOVER O STASH
+git stash pop
+
+COAMANDO PARA PASSAR ARQUIVOS SOMENTE MODIFIED (NAO COLOCADO NA UNSTAGE)
+git stash --keep-index
+
+COMANDO PARA EXCLUIR STASH 
+git stash drp 'ex: stash@{0}'
+
+COAMANDO PARA LISTAR E MOSTRAR TODAS AS STASH 
+git stash list --stat
+
+COMANDO PARA QUANDO O ARQUIVO ESTA UNTRACKED
+git stash -u
+
+

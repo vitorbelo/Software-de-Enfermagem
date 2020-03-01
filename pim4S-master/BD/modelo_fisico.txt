@@ -1,0 +1,26 @@
+
+CREATE TABLE ENDERECOS (
+Id_Endereco INTEGER PRIMARY KEY,
+Fk_Crianca INTEGER,
+Lougadouro VARCHAR(50),
+numero VARCHAR(5)
+)
+
+CREATE TABLE CRIANCAS (
+Id_Crianca INTEGER PRIMARY KEY,
+Nome VARCHAR(50),
+Escola VARCHAR(50),
+Data_Nascimento VARCHAR(20),
+Mae VARCHAR(50),
+Pai VARCHAR(50),
+Responsavel VARCHAR(50),
+Telefone VARCHAR(15),
+Casa_Propria VARCHAR(1),
+Bolsa_Familia VARCHAR(1),
+Renda_Familiar VARCHAR(15),
+Gasto_Mensal VARCHAR(15),
+Encaminhado VARCHAR(20),
+Problematica TEXT
+)
+
+ALTER TABLE ENDERECOS ADD FOREIGN KEY(Fk_Crianca) REFERENCES CRIANCAS (Id_Crianca)

@@ -1,0 +1,143 @@
+
+Create database Ricardo
+go
+use Ricardo
+go
+create table Crianca
+(
+ id int identity (1,1) primary key,
+ Nome Varchar (50),
+ Endereço Varchar (50),
+ DataNascimento Varchar (50),
+ Escola Varchar (50),
+ Telefone Varchar (50),
+ Mae Varchar (50),
+ Pai Varchar (50),
+ Responsavel Varchar (50),
+ CasaPropria Varchar (50),
+ RendaFamilia Varchar (50),
+ BolsaFamilia varchar (50),
+ GastoMensal Varchar (50),
+ Encaminhado Varchar (50),
+ NumeroCasa Varchar (50),
+ Atendimento text 
+)
+go
+create table Usuarios
+(
+ id int identity (1,1) primary key,
+ senha Varchar (50)
+)
+go
+insert into Usuarios
+Values 
+(
+'123'
+)
+go
+create  procedure SP_INSERECRIANCA
+(
+ @Nome Varchar (50),
+ @Endereço Varchar (50),
+ @DataNascimento Varchar (50),
+ @Escola Varchar (50),
+ @Telefone Varchar (50),
+ @Mae Varchar (50),
+ @Pai Varchar (50),
+ @Responsavel Varchar (50),
+ @CasaPropria Varchar (50),
+ @RendaFamilia Varchar (50),
+ @BolsaFamilia varchar (50),
+ @GastoMensal Varchar (50),
+ @Encaminhado Varchar (50),
+ @NumeroCasa Varchar (50),
+ @Atendimento text
+)
+as
+begin
+insert into Crianca values
+(
+ @Nome ,
+ @Endereço ,
+ @DataNascimento ,
+ @Escola ,
+ @Telefone ,
+ @Mae ,
+ @Pai ,
+ @Responsavel ,
+ @CasaPropria ,
+ @RendaFamilia ,
+ @BolsaFamilia ,
+ @GastoMensal ,
+ @Encaminhado,
+ @NumeroCasa,
+ @Atendimento
+)
+end
+go
+create procedure SP_INSEREUSUARIO
+(
+@Senha varchar(50)
+)
+as
+begin
+insert into Usuarios values
+(
+@Senha
+)
+end
+go
+CREATE PROCEDURE SP_ALTERARUSUARIO
+@id int,
+@Senha varchar(50)
+AS
+BEGIN
+UPDATE Usuarios SET Senha=@Senha WHERE id=@id
+END
+go
+create procedure sp_ExcluirUsuario
+@id varchar(40)
+as 
+begin
+delete Usuarios where id = @id
+end
+go
+CREATE PROCEDURE SP_ALTERARCRIANCA
+@id int,
+@Nome Varchar (50),
+@Endereço Varchar (50),
+@DataNascimento Varchar (50),
+@Escola Varchar (50),
+@Telefone Varchar (50),
+@Mae Varchar (50),
+@Pai Varchar (50),
+@Responsavel Varchar (50),
+@CasaPropria Varchar (50),
+@RendaFamilia Varchar (50),
+@BolsaFamilia varchar (50),
+@GastoMensal Varchar (50),
+@Encaminhado Varchar (50),
+@NumeroCasa Varchar (50),
+@Atendimento text
+AS
+BEGIN
+UPDATE Crianca SET 
+Nome = @Nome, 
+Endereço = @Endereço, 
+DataNascimento = @DataNascimento, 
+Escola = @Escola, 
+Telefone = @Telefone, 
+Mae = @Mae, 
+Pai = @Pai,
+Responsavel = @Responsavel,
+CasaPropria = @CasaPropria,
+RendaFamilia = @RendaFamilia,
+GastoMensal = @GastoMensal,
+Encaminhado = @Encaminhado,
+NumeroCasa = @NumeroCasa,
+Atendimento = @Atendimento
+WHERE id=@id
+END
+go
+select * from Usuarios
+select * from Crianca

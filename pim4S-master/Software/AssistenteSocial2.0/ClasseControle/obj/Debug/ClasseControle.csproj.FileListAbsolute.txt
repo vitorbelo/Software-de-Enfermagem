@@ -1,0 +1,42 @@
+C:\Users\Ju\source\repos\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseControle.dll
+C:\Users\Ju\source\repos\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseControle.pdb
+C:\Users\Ju\source\repos\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseModel.dll
+C:\Users\Ju\source\repos\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseModel.pdb
+C:\Users\Ju\source\repos\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.csprojAssemblyReference.cache
+C:\Users\Ju\source\repos\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.csproj.CopyComplete
+C:\Users\Ju\source\repos\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.dll
+C:\Users\Ju\source\repos\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.pdb
+C:\Users\Ju\Desktop\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseControle.dll
+C:\Users\Ju\Desktop\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseControle.pdb
+C:\Users\Ju\Desktop\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseModel.dll
+C:\Users\Ju\Desktop\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseModel.pdb
+C:\Users\Ju\Desktop\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.csprojAssemblyReference.cache
+C:\Users\Ju\Desktop\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.csproj.CopyComplete
+C:\Users\Ju\Desktop\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.dll
+C:\Users\Ju\Desktop\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.pdb
+E:\Tudo\Programação em Visual Studio\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseControle.dll
+E:\Tudo\Programação em Visual Studio\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseControle.pdb
+E:\Tudo\Programação em Visual Studio\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseModel.dll
+E:\Tudo\Programação em Visual Studio\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseModel.pdb
+E:\Tudo\Programação em Visual Studio\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.csprojAssemblyReference.cache
+E:\Tudo\Programação em Visual Studio\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.csproj.CopyComplete
+E:\Tudo\Programação em Visual Studio\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.dll
+E:\Tudo\Programação em Visual Studio\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.pdb
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseControle.dll
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseControle.pdb
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseModel.dll
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseModel.pdb
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.csprojAssemblyReference.cache
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.csproj.CoreCompileInputs.cache
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.csproj.CopyComplete
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.dll
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.pdb
+C:\Users\Vitor\Desktop\pim4S\Software\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseControle.dll
+C:\Users\Vitor\Desktop\pim4S\Software\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseControle.pdb
+C:\Users\Vitor\Desktop\pim4S\Software\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseModel.dll
+C:\Users\Vitor\Desktop\pim4S\Software\AssistenteSocial2.0\ClasseControle\bin\Debug\ClasseModel.pdb
+C:\Users\Vitor\Desktop\pim4S\Software\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.csprojAssemblyReference.cache
+C:\Users\Vitor\Desktop\pim4S\Software\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.csproj.CoreCompileInputs.cache
+C:\Users\Vitor\Desktop\pim4S\Software\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.csproj.CopyComplete
+C:\Users\Vitor\Desktop\pim4S\Software\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.dll
+C:\Users\Vitor\Desktop\pim4S\Software\AssistenteSocial2.0\ClasseControle\obj\Debug\ClasseControle.pdb

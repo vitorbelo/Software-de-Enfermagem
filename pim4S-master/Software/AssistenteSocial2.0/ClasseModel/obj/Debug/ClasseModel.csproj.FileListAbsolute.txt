@@ -1,0 +1,21 @@
+C:\Users\Ju\source\repos\AssistenteSocial2.0\ClasseModel\bin\Debug\ClasseModel.dll
+C:\Users\Ju\source\repos\AssistenteSocial2.0\ClasseModel\bin\Debug\ClasseModel.pdb
+C:\Users\Ju\source\repos\AssistenteSocial2.0\ClasseModel\obj\Debug\ClasseModel.csprojAssemblyReference.cache
+C:\Users\Ju\source\repos\AssistenteSocial2.0\ClasseModel\obj\Debug\ClasseModel.dll
+C:\Users\Ju\source\repos\AssistenteSocial2.0\ClasseModel\obj\Debug\ClasseModel.pdb
+C:\Users\Ju\Desktop\AssistenteSocial2.0\ClasseModel\bin\Debug\ClasseModel.dll
+C:\Users\Ju\Desktop\AssistenteSocial2.0\ClasseModel\bin\Debug\ClasseModel.pdb
+C:\Users\Ju\Desktop\AssistenteSocial2.0\ClasseModel\obj\Debug\ClasseModel.csprojAssemblyReference.cache
+C:\Users\Ju\Desktop\AssistenteSocial2.0\ClasseModel\obj\Debug\ClasseModel.dll
+C:\Users\Ju\Desktop\AssistenteSocial2.0\ClasseModel\obj\Debug\ClasseModel.pdb
+E:\Tudo\Programação em Visual Studio\AssistenteSocial2.0\ClasseModel\bin\Debug\ClasseModel.dll
+E:\Tudo\Programação em Visual Studio\AssistenteSocial2.0\ClasseModel\bin\Debug\ClasseModel.pdb
+E:\Tudo\Programação em Visual Studio\AssistenteSocial2.0\ClasseModel\obj\Debug\ClasseModel.csprojAssemblyReference.cache
+E:\Tudo\Programação em Visual Studio\AssistenteSocial2.0\ClasseModel\obj\Debug\ClasseModel.dll
+E:\Tudo\Programação em Visual Studio\AssistenteSocial2.0\ClasseModel\obj\Debug\ClasseModel.pdb
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseModel\bin\Debug\ClasseModel.dll
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseModel\bin\Debug\ClasseModel.pdb
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseModel\obj\Debug\ClasseModel.csprojAssemblyReference.cache
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseModel\obj\Debug\ClasseModel.csproj.CoreCompileInputs.cache
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseModel\obj\Debug\ClasseModel.dll
+C:\Users\Vitor\Desktop\pim4S-master\pim4S-master\Software\AssistenteSocial2.0\ClasseModel\obj\Debug\ClasseModel.pdb
